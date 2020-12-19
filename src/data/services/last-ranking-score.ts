@@ -7,7 +7,7 @@ export class LastRankingScoreService implements LastRankingScore {
   constructor(private readonly loadLastRankingRepository: LoadLastRankingRepository) {}
 
   async lastScore(): Promise<RankingScore[]> {
-    if (new Date().getHours() > 22) {
+    if (new Date().getHours() > 21) {
       throw new RankingUnavailableError();
     }
 
