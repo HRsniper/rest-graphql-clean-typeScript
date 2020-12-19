@@ -5,3 +5,5 @@ NodeJs Rest API and GraphQL using Clean Architecture, Typescript and Design Patt
 original repository : [clean-ranking-loader](https://github.com/rmanguinho/clean-ranking-loader)
 
 license : [GPL-3.0](LICENSE)
+
+endpoint : [http://localhost:3333/api/rankings/last](http://localhost:3333/api/rankings/last)
