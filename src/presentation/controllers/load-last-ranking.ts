@@ -8,16 +8,14 @@ export class LoadLastRankingController implements Controller {
   async handle(): Promise<HttpResponse<RankingScoreViewModel[]>> {
     try {
       const ranking = await this.lastRankingScore.lastScore();
+      const viewModels = ranking.map((item) => ({
+        ...item,
+        matchDate: item.matchDate.toISOString(),
+      }));
 
-      return {
-        statusCode: 200,
-        data: ranking.map((item) => ({
-          ...item,
-          matchDate: item.matchDate.toISOString(),
-        })),
-      };
+      return ok(viewModels);
     } catch (error) {
-      return { statusCode: 500, data: error.stack };
+      return serverError(error);
     }
   }
 }
