@@ -1,5 +1,5 @@
 {
-  "name": "rest-graphql-clean-typeScript",
+  "name": "rest-graphql-clean-typescript",
   "version": "1.0.0",
   "description": "NodeJs Rest API and GraphQL using Clean Architecture, Typescript and Design Patterns by Rodrigo Manguinho",
   "repository": "https://github.com/HRsniper/rest-graphql-clean-typeScript.git",
