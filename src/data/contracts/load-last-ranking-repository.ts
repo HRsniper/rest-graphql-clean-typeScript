@@ -1,3 +1,3 @@
 export interface LoadLastRankingRepository {
-  loadLastRanking: () => Promise<[]>
+  loadLastRanking: () => Promise<[]>;
 }
